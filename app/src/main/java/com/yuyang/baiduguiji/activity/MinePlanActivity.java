@@ -101,6 +101,8 @@ public class MinePlanActivity extends BaseActivity {
     @Override
     protected void setViewsListener() {
 
+
+
     }
 
     /**
