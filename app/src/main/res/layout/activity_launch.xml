@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.LaunchActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="19"
+        android:src="@mipmap/sport"
+        android:scaleType="fitXY"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#515151"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@android:color/white"
+        >
+
+        <ImageView
+            android:id="@+id/iv_splogo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/icon"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_wen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_splogo"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:text="StayHealthy"
+            />
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_wen"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="italic"
+            android:textColor="#999999"
+            />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_version"
+            android:layout_below="@+id/tv_wen"
+            android:textColor="#999999"
+            android:textSize="10sp"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="40dp"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_go"
+            android:background="@drawable/go"
+            android:layout_alignParentRight="true"
+            android:text="进入"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@drawable/gocolor"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

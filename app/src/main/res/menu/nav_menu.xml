@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <group android:checkableBehavior="single">
+      <item
+          android:id="@+id/nav_run_history"
+          android:icon="@drawable/city"
+          android:title="运动记录"
+          />
+   </group>
+
+
+    <item android:title="stayHealthy">
+
+        <menu>
+               <item
+                   android:id="@+id/nav_shezi"
+                   android:icon="@drawable/shezhi"
+                   android:title="设置"
+                   />
+
+
+
+            <item android:id="@+id/nav_about"
+                android:icon="@drawable/guanyu"
+                android:title="关于" />
+       </menu>
+
+    </item>
+
+   <item  android:title="SOS功能模块" >
+
+   <menu>
+
+
+        <item
+            android:id="@+id/nav_sos"
+            android:icon="@drawable/duanxin"
+            android:title="短信速发" />
+
+       
+
+   </menu>
+
+    </item>
+
+</menu>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_dailogtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7a7"
+        android:padding="8dp"
+        android:textColor="#eeee"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tv_dialogmessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="3dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#999999"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_anjian"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/tv_alcancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_alignParentLeft="true"
+            android:textSize="20sp"
+            android:text="取消"
+            android:textColor="@android:color/black"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="@android:color/black"
+            android:layout_centerInParent="true"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_alok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            />
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".activity.LianXiRenActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/hourweatherbg"
+        android:scaleType="fitXY"
+        />
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:id="@+id/rl_lxrtitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <Button
+            android:id="@+id/btn_lxrback"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/back"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="设置紧急联系人"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_yourname"
+        android:layout_below="@+id/rl_lxrtitle"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_yourname"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:src="@drawable/yourname"
+            android:layout_marginLeft="40dp"
+            />
+
+        <EditText
+            android:id="@+id/et_yourname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_yourname"
+            android:layout_marginLeft="10dp"
+            android:hint="输入您的姓名"
+            android:textColorHint="#fff"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_lxrname"
+        android:layout_below="@+id/rl_yourname"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_lxrname"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:src="@drawable/lxrname"
+            android:layout_marginLeft="40dp"
+            />
+
+        <EditText
+            android:id="@+id/et_lxrname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_lxrname"
+            android:layout_marginLeft="10dp"
+            android:hint="输入紧急联系人姓名"
+            android:textColorHint="#fff"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_lxrnumber"
+        android:layout_below="@+id/rl_lxrname"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_lxrnumber"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:src="@drawable/number"
+            android:layout_marginLeft="40dp"
+            />
+
+        <EditText
+            android:id="@+id/et_lxrnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_lxrnumber"
+            android:layout_marginLeft="10dp"
+            android:hint="输入紧急联系人号码"
+            android:inputType="phone"
+            android:textColorHint="#fff"
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/tv_lxrsave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_lxrnumber"
+            android:layout_centerInParent="true"
+            android:text="保存"
+            android:textColor="#fff"
+            android:background="@drawable/go"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_tishia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_lxrnumber"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:textSize="16sp"
+        android:textColor="#fff"
+        />
+
+    <TextView
+        android:id="@+id/tv_lxrTips"
+        android:layout_below="@+id/tv_tishia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:text="Tips:成功设置好紧急联系人后，在打开“滑动菜单”中的“短信速发”后， 点击“短信速发”界面左上角如下图标即可快速给设定联系人发送紧急短信。"
+        android:textColor="#ff6600"
+        />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/faduanxin"
+        android:layout_below="@+id/tv_lxrTips"
+        android:layout_centerInParent="true"
+        />
+
+
+
+</RelativeLayout>

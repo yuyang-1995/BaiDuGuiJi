@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="line"
+    >
+    <stroke
+
+        android:width="1dp"
+
+        android:color="#fff"
+
+        android:dashGap="2dp"
+
+        android:dashWidth="2dp"/>
+
+    <!--dashGap 为两个短虚线间的宽度-->
+
+    <!--dashWidth 为短虚线的宽度-->
+
+</shape>

@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AboutActivity"
+    >
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/aboutbg"
+                android:scaleType="fitXY"
+                app:layout_collapseMode="parallax" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                >
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_jieshao"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/jieshao"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_jieshao"
+                    android:text="软件的介绍"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16sp"
+                    android:textColor="#1296db"
+                    android:layout_marginTop="5dp"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#999999"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_jieshao"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#8f8f8f"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#999999"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_sos"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/sosiv"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_sos"
+                    android:text="SOS功能模块的介绍"
+                    android:textColor="#1296db"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#999999"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_sosjiehsao"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#8f8f8f"
+                android:textSize="14sp"
+
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#999999"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_kaifang"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/aixin"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_kaifang"
+                    android:text="感谢开源的世界和开放的资源"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16sp"
+                    android:textColor="#1296db"
+                    android:layout_marginTop="5dp"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#999999"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_litepal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•LitePal:"
+                    android:textSize="14sp"
+                    android:textColor="#8f8f8f"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:text="github.com/LitePalFramework/LitePal"
+                    android:textSize="12sp"
+                    android:layout_toRightOf="@+id/tv_litepal"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#8f8f8f"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_okhttp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•OkHttp:"
+                    android:textColor="#8f8f8f"
+                    android:textSize="14sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:text="github.com/square/okhttp"
+                    android:textSize="12sp"
+                    android:layout_toRightOf="@+id/tv_okhttp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#8f8f8f"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_glide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•Glide:"
+                    android:textSize="14sp"
+                    android:textColor="#8f8f8f"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:text="github.com/bumptech/glide"
+                    android:textSize="12sp"
+                    android:layout_toRightOf="@+id/tv_glide"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#8f8f8f"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_drag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•DSLView:"
+                    android:textSize="14sp"
+                    android:textColor="#8f8f8f"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:text="github.com/bauerca/drag-sort-listview"
+                    android:textSize="12sp"
+                    android:layout_toRightOf="@+id/tv_drag"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#8f8f8f"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_weatherdata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•天气数据由和风天气提供"
+                    android:textColor="#8f8f8f"
+                    android:textSize="14sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_ditu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_weatherdata"
+                    android:layout_marginTop="0dp"
+                    android:text="•定位数据由百度地图提供"
+                    android:textSize="14sp"
+                    android:textColor="#8f8f8f" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•图片图标资源来源网络"
+                    android:textSize="14sp"
+                    android:layout_below="@+id/tv_ditu"
+                    android:textColor="#8f8f8f"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#999999"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                />
+
+
+
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_other"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/kaifang"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_other"
+                    android:text="其它"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16sp"
+                    android:textColor="#1296db"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_yuanma"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/wendang"
+                    android:layout_below="@+id/tv_other"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_yuanma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_other"
+                    android:text="下载项目源码"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#8f8f8f"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14sp"
+                    android:layout_toRightOf="@+id/iv_yuanma"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_fankui"
+                    android:layout_width="22dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_other"
+                    android:layout_marginLeft="43dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/tv_yuanma"
+                    android:src="@drawable/fk" />
+
+                <TextView
+                    android:id="@+id/tv_fankui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_other"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_toRightOf="@+id/iv_fankui"
+                    android:textSize="14sp"
+                    android:text="反馈或建议" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_aabanben"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="25dp"
+                android:textSize="12sp"
+                android:textColor="#8f8f8f"
+                />
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

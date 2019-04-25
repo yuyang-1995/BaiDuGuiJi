@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1000"
+    tools:context=".activity.SheZhiActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:background="#106c99"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        >
+
+        <Button
+            android:id="@+id/btn_szback"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/back"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="设置"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_jinji"
+        android:layout_below="@+id/ll_title"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_sos"
+            android:text="SOS模块功能模块"
+            android:textColor="#ff3300"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/tv_jj"
+            android:layout_below="@+id/tv_sos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加紧急联系人(用于短信速发,紧急求助)"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            />
+
+        <Button
+            android:id="@+id/btn_lainxiren"
+            android:text="点击设置"
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+            android:background="@drawable/btn"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_below="@+id/tv_jj"
+            android:layout_marginBottom="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_savelxr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn_lainxiren"
+            android:layout_below="@+id/tv_jj"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            />
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@+id/rl_jinji"
+        android:background="@drawable/dashed_line"
+        />
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+

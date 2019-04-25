@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SoSActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#106c99"
+        android:layout_gravity="center"
+        >
+
+        <Button
+            android:id="@+id/btn_sosback"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/back"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="SOS功能模块-短信速发"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_faduanxin"
+            android:background="@drawable/faduanxin"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8066cccc"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/loc"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_cityloc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="5dp"
+            />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/biaoqian_bac"
+        android:layout_marginTop="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_biaoqian"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/biaoqian"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_biaoqiantitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="3dp"
+            android:text="您可以选取以下文字标签作为短信内容发送给联系人以得到更准确的帮助"
+            android:layout_toRightOf="@+id/iv_biaoqian"
+            android:layout_marginLeft="5dp"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_huanjin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_biaoqiantitle"
+            android:text="所处环境："
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            />
+
+        <TextView
+            android:id="@+id/tv_huanjin1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="车中"
+            android:background="@drawable/sosbcselector"
+            android:textColor="@android:color/black"
+            android:layout_toRightOf="@+id/tv_huanjin"
+            android:layout_below="@+id/tv_biaoqiantitle"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_huanjin2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="室内"
+            android:background="@drawable/sosbcselector"
+            android:textColor="@android:color/black"
+            android:layout_toRightOf="@+id/tv_huanjin1"
+            android:layout_below="@+id/tv_biaoqiantitle"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="2dp"
+            android:clickable="true"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_huanjin3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="街道"
+            android:background="@drawable/sosbcselector"
+            android:textColor="@android:color/black"
+            android:layout_toRightOf="@+id/tv_huanjin2"
+            android:layout_below="@+id/tv_biaoqiantitle"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="2dp"
+            android:clickable="true"
+            android:textSize="14sp"
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/tv_huanjin4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="荒芜的野外"
+            android:background="@drawable/sosbcselector"
+            android:layout_toRightOf="@+id/tv_huanjin3"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tv_biaoqiantitle"
+            android:layout_marginLeft="2dp"
+            android:textSize="14sp"
+            android:clickable="true"
+            android:textColor="@android:color/black"
+            />
+
+        <TextView
+            android:id="@+id/tv_huanjin5"
+            android:text="网约车"
+            android:layout_below="@+id/tv_biaoqiantitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:layout_marginLeft="2dp"
+            android:textColor="@android:color/black"
+            android:background="@drawable/sosbcselector"
+            android:layout_toRightOf="@+id/tv_huanjin4" />
+
+
+        <TextView
+            android:id="@+id/tv_zhuangtai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_huanjin"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="8dp"
+            android:text="所处状态："
+            android:clickable="true"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_zhuangtai1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="被挟持"
+            android:layout_toRightOf="@+id/tv_zhuangtai"
+            android:layout_below="@+id/tv_huanjin"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/sosbcselector"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            android:clickable="true"
+            android:textColor="@android:color/black"
+            />
+
+        <TextView
+            android:id="@+id/tv_zhuangtai2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="被言语恐吓"
+            android:background="@drawable/sosbcselector"
+            android:layout_toRightOf="@+id/tv_zhuangtai1"
+            android:layout_below="@+id/tv_huanjin"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="2dp"
+            android:textSize="14sp"
+            android:clickable="true"
+            android:textColor="@android:color/black"
+            />
+
+        <TextView
+            android:id="@+id/tv_zhuangtai3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_huanjin"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/tv_zhuangtai2"
+            android:background="@drawable/sosbcselector"
+            android:text="被暴力攻击"
+            android:clickable="true"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_xuyao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="需要联系人："
+            android:layout_below="@+id/tv_zhuangtai"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:clickable="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_xuyao1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="报警"
+            android:background="@drawable/sosbcselector"
+            android:layout_below="@+id/tv_zhuangtai"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:clickable="true"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/tv_xuyao"
+            />
+
+        <TextView
+            android:id="@+id/tv_xuyao2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_zhuangtai"
+            android:layout_marginTop="8dp"
+            android:text="不报警"
+            android:background="@drawable/sosbcselector"
+            android:textSize="14sp"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/tv_xuyao1"
+            android:textColor="@android:color/black"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_xuyao3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_zhuangtai"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:clickable="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/tv_xuyao2"
+            android:background="@drawable/sosbcselector"
+            android:text="联系您"
+            android:layout_marginBottom="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_xuyao4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_zhuangtai"
+            android:layout_toRightOf="@+id/tv_xuyao3"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="8dp"
+            android:text="不联系您"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:background="@drawable/sosbcselector"
+            />
+
+        <TextView
+            android:id="@+id/tv_xuyao5"
+            android:layout_below="@+id/tv_xuyao"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="5dp"
+            android:text="跟据定位找你"
+            android:textSize="14sp"
+            android:background="@drawable/sosbcselector"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注：此功能的实现需要访问设备的地理位置发送短信和通讯录信息等权限,但所使用数据均不会上传互联网。"
+            android:textColor="#333333"
+            android:layout_marginRight="4dp"
+            android:textSize="8sp"
+            android:layout_marginLeft="3dp"
+            android:layout_below="@+id/tv_xuyao"
+            android:layout_toRightOf="@+id/tv_xuyao5"
+            android:layout_marginTop="3dp"
+            />
+
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_lianxiren"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>
